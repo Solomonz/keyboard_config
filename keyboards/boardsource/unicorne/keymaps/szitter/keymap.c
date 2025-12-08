@@ -35,9 +35,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_NAV] = LAYOUT_split_3x6_3(
-        _______,            _______,            _______,            _______,            _______,            _______,                                        LALT(KC_LEFT),      _______,            _______,            LALT(KC_RIGHT),     _______,            _______,
+        _______,            _______,            _______,            _______,            _______,            _______,                                        LALT(KC_LEFT),      LGUI(LALT(KC_LEFT)),LGUI(LALT(KC_RIGHT)),LALT(KC_RIGHT),    _______,            _______,
         _______,            _______,            _______,            _______,            _______,            _______,                                        KC_LEFT,            KC_DOWN,            KC_UP,              KC_RIGHT,           _______,            _______,
-        _______,            _______,            _______,            _______,            _______,            _______,                                        LGUI(KC_LEFT),      _______,            _______,            LGUI(KC_RIGHT),     _______,            _______,
+        _______,            _______,            _______,            _______,            _______,            _______,                                        LGUI(KC_LEFT),      LGUI(LCTL(KC_LEFT)),LGUI(LCTL(KC_RIGHT)),LGUI(KC_RIGHT),    _______,            _______,
                                                                     _______,                    _______,                        _______,            _______,            _______,                 _______
     ),
 
