@@ -31,7 +31,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,            KC_KP_ASTERISK,     KC_AT,              KC_LCBR,            KC_RCBR,            KC_CIRC,                                        _______,            _______,            _______,            _______,            _______,            _______,
         _______,            KC_EXLM,            KC_GRAVE,           KC_LPRN,            KC_RPRN,            KC_DLR,                                         _______,            _______,            _______,            _______,            _______,            _______,
         _______,            KC_AMPR,            KC_PIPE,            KC_LBRC,            KC_RBRC,            KC_TRANSPARENT,                                 _______,            _______,            _______,            _______,            _______,            _______,
-                                                                    _______,                    KC_UNDS,                        _______,            _______,            _______,                 _______
+                                                                    KC_UNDS,                    _______,                        _______,            _______,            _______,                 _______
     ),
 
     [_NAV] = LAYOUT_split_3x6_3(
