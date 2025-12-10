@@ -58,10 +58,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 const uint16_t PROGMEM escape_combo[] = {KC_J, MT(MOD_RGUI, KC_K), COMBO_END};
 const uint16_t PROGMEM enter_combo[]  = {LT(_NAV, KC_F), MT(MOD_LGUI, KC_D), COMBO_END};
+const uint16_t PROGMEM caps_word_combo[]  = {LT(_NAV, KC_F), KC_J, COMBO_END};
 
 combo_t key_combos[] = {
     COMBO(escape_combo, KC_ESC),
     COMBO(enter_combo, KC_ENTER),
+    COMBO(caps_word_combo, QK_CAPS_WORD_TOGGLE),
 };
 
 /**********************/
