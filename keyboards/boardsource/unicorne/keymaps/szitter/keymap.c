@@ -14,7 +14,7 @@ enum layers {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_BSE] = LAYOUT_split_3x6_3(
-        LCTL(LGUI(KC_Q)),   KC_Q,               KC_W,               KC_E,               KC_R,               KC_T,                                           KC_Y,               KC_U,               KC_I,               KC_O,               KC_P,               KC_BSLS,
+        C(G(KC_Q)),         KC_Q,               KC_W,               KC_E,               KC_R,               KC_T,                                           KC_Y,               KC_U,               KC_I,               KC_O,               KC_P,               KC_BSLS,
         _______,            MT(MOD_LCTL, KC_A), MT(MOD_LALT, KC_S), MT(MOD_LGUI, KC_D), LT(_NAV, KC_F),     KC_G,                                           KC_H,               KC_J,               MT(MOD_RGUI, KC_K), MT(MOD_RALT, KC_L), MT(MOD_RCTL, KC_SCLN),KC_QUOT,
         QK_BOOT,            KC_Z,               KC_X,               KC_C,               KC_V,               KC_B,                                           KC_N,               KC_M,               KC_COMM,            KC_DOT,             KC_SLSH,            _______,
                                                                     LT(_NUM, KC_BSPC),          KC_SPC,                         LT(_MSE, KC_TAB),   _______,            OSM(MOD_RSFT),          LT(_SYM, KC_DELETE)
@@ -35,9 +35,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_NAV] = LAYOUT_split_3x6_3(
-        _______,            _______,            _______,            _______,            _______,            _______,                                        LALT(KC_LEFT),      LGUI(LALT(KC_LEFT)),LGUI(LALT(KC_RIGHT)),LALT(KC_RIGHT),    _______,            _______,
+        _______,            _______,            _______,            _______,            _______,            _______,                                        A(KC_LEFT),         G(A(KC_LEFT)),      G(A(KC_RIGHT)),     A(KC_RIGHT),        _______,            _______,
         _______,            _______,            _______,            _______,            _______,            _______,                                        KC_LEFT,            KC_DOWN,            KC_UP,              KC_RIGHT,           _______,            _______,
-        _______,            _______,            _______,            _______,            _______,            _______,                                        LGUI(KC_LEFT),      LGUI(LCTL(KC_LEFT)),LGUI(LCTL(KC_RIGHT)),LGUI(KC_RIGHT),    _______,            _______,
+        _______,            _______,            _______,            _______,            _______,            _______,                                        G(KC_LEFT),         G(C(KC_LEFT)),      G(C(KC_RIGHT)),     G(KC_RIGHT),        _______,            _______,
                                                                     _______,                    _______,                        _______,            _______,            _______,                 _______
     ),
 
@@ -56,9 +56,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* COMBOS SECTION BEGIN */
 /************************/
 
-const uint16_t PROGMEM escape_combo[] = {KC_J, MT(MOD_RGUI, KC_K), COMBO_END};
-const uint16_t PROGMEM enter_combo[]  = {LT(_NAV, KC_F), MT(MOD_LGUI, KC_D), COMBO_END};
-const uint16_t PROGMEM caps_word_combo[]  = {LT(_NAV, KC_F), KC_J, COMBO_END};
+const uint16_t PROGMEM escape_combo[]    = {KC_J, MT(MOD_RGUI, KC_K), COMBO_END};
+const uint16_t PROGMEM enter_combo[]     = {LT(_NAV, KC_F), MT(MOD_LGUI, KC_D), COMBO_END};
+const uint16_t PROGMEM caps_word_combo[] = {LT(_NAV, KC_F), KC_J, COMBO_END};
 
 combo_t key_combos[] = {
     COMBO(escape_combo, KC_ESC),
